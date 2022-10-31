@@ -10,7 +10,7 @@ import { GlobalStyle } from './utils/globalstyle';
 import Navigation from './routes/navigation/navigation.route';
 import Home from './routes/home/home.route';
 import About from './routes/about/about.route';
-import HomeLoader from "./components/loader/home-loader.component";
+import HomeLoader from './components/loaders/home-loader/home-loader.component'
 
 function App() {
   const [isLoading, setLoadingStatus] = useState(true);
