@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+import React, { Suspense, lazy, useState, useEffect } from "react";
 import {Routes, Route, Outlet} from 'react-router-dom';
 import { ThemeProvider } from "styled-components";
+import CSSTransition from "react-transition-group/esm/CSSTransition";
 import './App.css';
 
 import { Theme } from './utils/theme';
@@ -11,6 +12,18 @@ import Home from './routes/home/home.route';
 import About from './routes/about/about.route';
 
 function App() {
+  const [isLoading, setLoadingStatus] = useState(true);
+  //needed for the exit animation of the loader
+  const [showLoader, isShowingLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      isShowingLoader(false);
+    }, 4250);
+    setTimeout(() => {
+      setLoadingStatus(false);
+    }, 5000);
+  });
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
