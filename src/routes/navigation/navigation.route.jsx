@@ -1,26 +1,21 @@
 import React, { Fragment } from "react";
 import { Outlet } from "react-router-dom";
-import {
-    NavigationContainer,
-    NavLinks,
-    NavLink,
-    LogoContainer,
-  } from './navigation.styles';
+import { NavigationContainer, NavigationItems, LogoContainer } from "./navigation.styles";
 
-const Navigation = () => {
-    return(
-        <Fragment>
-            <NavigationContainer>
-                <LogoContainer to='/'>HARSIMRAN KAUR</LogoContainer>
-
-                <NavLinks>
-                    <NavLink to='/'>HOME</NavLink>
-                    <NavLink to='/about'>ABOUT</NavLink>
-                </NavLinks>
-            </NavigationContainer>
-            <Outlet />
-        </Fragment>
-      )
+const Navigation =() => {
+  return (
+    <Fragment>
+        <NavigationContainer>
+            <LogoContainer to={{pathname: "/"}} aria-label="home">
+                Harsimran 
+                <span>Kaur</span>
+            </LogoContainer>
+            <NavigationItems to="">Home</NavigationItems>
+            <NavigationItems to="/about">About</NavigationItems>
+        </NavigationContainer>
+        <Outlet />
+    </Fragment>
+  );
 }
 
 export default Navigation;
