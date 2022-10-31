@@ -1,16 +1,27 @@
-import React, { useState, useEffect } from "react";
-import {Routes, Route} from 'react-router-dom';
+import React, { Suspense, lazy, useState, useEffect } from "react";
+import { Routes, Switch, HashRouter as Router, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import CSSTransition from "react-transition-group/esm/CSSTransition";
-import './App.css';
+import TransitionGroup from "react-transition-group/esm/TransitionGroup";
 
 import { Theme } from './utils/theme';
 import { GlobalStyle } from './utils/globalstyle';
 
+import HomeLoader from './components/loaders/home-loader/home-loader.component'
+import Loader from "./components/loaders/project-loader/project-loader.component";
+import ViewportWidthProvider from "./utils/getViewport";
+
 import Navigation from './routes/navigation/navigation.route';
 import Home from './routes/home/home.route';
-import About from './routes/about/about.route';
-import HomeLoader from './components/loaders/home-loader/home-loader.component'
+
+const About = lazy(() => import('./routes/about/about.route'));
+// const ProjectDetailsRoute = lazy(() => import("./routes/ProjectDetailsRoute"));
+
+const ProjectDetailsRoute = () => {
+  return(
+    <h1>Project Details</h1>
+  )
+}
 
 function App() {
   const [isLoading, setLoadingStatus] = useState(true);
@@ -47,15 +58,44 @@ function App() {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
-      <Routes>
-        <Route path='/' element={<Navigation />}>
-          <Route index element={<Home />} />
-          <Route path='about' element={<About />} />
-        </Route>
-      </Routes> 
+      <ViewportWidthProvider>
+      <TransitionGroup>
+      <CSSTransition
+
+        classNames="change-route"
+        timeout={{ enter: 750, exit: 750 }}
+        appear
+        enter
+        exit
+      >
+        <Routes>
+          <Route path='/' element={<Navigation />}>
+            <Route 
+              index element={ <Home /> } />
+            <Route 
+              path='about' 
+              element={  
+                <Suspense fallback={<Loader />}>
+                  <About />
+                </Suspense>
+              }  
+              />
+          </Route>
+        </Routes> 
+        </CSSTransition>
+        </TransitionGroup>
+      </ViewportWidthProvider>
     </ThemeProvider>
   );
 }
 
 export default App;
 
+// <Route
+//           path="about"
+//           element={
+//             <React.Suspense fallback={<>...</>}>
+//               <About />
+//             </React.Suspense>
+//           }
+//         />

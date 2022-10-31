@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cubeAnimation } from "../../../utils/kreyframes";
+import { cubeAnimation } from "../../../utils/keyframes";
 import { FadeUp } from "../../../utils/animations";
 
 const LoaderContainer = styled.section`
