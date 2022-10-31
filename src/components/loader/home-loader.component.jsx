@@ -9,7 +9,7 @@ import {
   JobDiv,
   JobParagraph,
   FadeUpDiv,
-} from "./HomeLoader.styles";
+} from "./home-loader.styles";
 
 const HomeLoader = () => {
   return (
@@ -18,14 +18,14 @@ const HomeLoader = () => {
         <GridDiv>
           <h1 className="read-only">Sarah Hick</h1>
           <FirstNameDiv>
-            <FirstNameSpan>Sarah</FirstNameSpan>
+            <FirstNameSpan>Harsimran</FirstNameSpan>
           </FirstNameDiv>
           <LastNameDiv>
-            <LastNameSpan>Hick</LastNameSpan>
+            <LastNameSpan>Kaur</LastNameSpan>
           </LastNameDiv>
 
           <JobDiv>
-            <JobParagraph>Front-End Developer</JobParagraph>
+            <JobParagraph>Full-Stack Developer</JobParagraph>
           </JobDiv>
         </GridDiv>
       </FadeUpDiv>

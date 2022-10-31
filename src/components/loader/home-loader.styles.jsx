@@ -89,11 +89,10 @@ const GridDiv = styled.div`
       display: none;
     }
   }
-  /* @media (min-width: ${(p) =>
-    `${p.theme.bp.desktops}px`}) and (orientation: landscape) {
+  @media (min-width: ${(p) =>`${p.theme.bp.desktops}px`}) and (orientation: landscape) {
     grid-template-rows: repeat(10, minmax(0,1fr));
     grid-template-columns: repeat(12, minmax(0,1fr));
-  } */
+  }
 `;
 
 const spans = css`
@@ -115,10 +114,9 @@ const FirstNameSpan = styled.span`
   @media (min-width: ${(p) => `${p.theme.bp.tablets}px`}) {
     font-size: 12.5vw;
   }
-  /* @media (min-width: ${(p) =>
-      `${p.theme.bp.desktops}px`}) and (orientation: landscape) {
+  @media (min-width: ${(p) =>`${p.theme.bp.desktops}px`}) and (orientation: landscape) {
     font-size: min(8.5vw, 10rem);
-  } */
+  }
 `;
 
 const FirstNameDiv = styled.div`
@@ -126,13 +124,12 @@ const FirstNameDiv = styled.div`
     ${enterRight}
     height:100%;
     grid-row: 3;
-    grid-column: 2 / span 3;
+    grid-column: 1 / span 5;
   }
-  /* @media (min-width: ${(p) =>
-      `${p.theme.bp.desktops}px`}) and (orientation: landscape) {
+  @media (min-width: ${(p) =>`${p.theme.bp.desktops}px`}) and (orientation: landscape) {
     grid-row: 4 / span 2;
     grid-column: 4 / span 4;
-  } */
+  }
 `;
 
 const LastNameSpan = styled.span`
@@ -143,10 +140,9 @@ const LastNameSpan = styled.span`
     font-size: 16vw;
     letter-spacing: min(1.5vw, 2rem);
   }
-  /* @media (min-width: ${(p) =>
-      `${p.theme.bp.desktops}px`}) and (orientation: landscape) {
+  @media (min-width: ${(p) =>`${p.theme.bp.desktops}px`}) and (orientation: landscape) {
     font-size: min(10vw, 11rem); 
-  }*/
+  }
 `;
 
 const LastNameDiv = styled.div`
@@ -157,11 +153,10 @@ const LastNameDiv = styled.div`
     grid-column: 3 / span 3;
     transition-delay: 0.1s;
   }
-  /* @media (min-width: ${(p) =>
-      `${p.theme.bp.desktops}px`}) and (orientation: landscape) {
+  @media (min-width: ${(p) =>`${p.theme.bp.desktops}px`}) and (orientation: landscape) {
     grid-row: 6 / span 2;
     grid-column: 6 / span 4;
-  } */
+  }
 `;
 
 const JobParagraph = styled.p`
@@ -174,10 +169,9 @@ const JobParagraph = styled.p`
     color: white;
     text-shadow: ${(p) => `3px 3px ${p.theme.color.primary}`};
   }
-  /* @media (min-width: ${(p) =>
-      `${p.theme.bp.desktops}px`}) and (orientation: landscape) {
+  @media (min-width: ${(p) =>`${p.theme.bp.desktops}px`}) and (orientation: landscape) {
     font-size: min(2vw, 2.75rem);
-  } */
+  }
 `;
 
 const JobDiv = styled.div`
@@ -189,11 +183,10 @@ const JobDiv = styled.div`
     grid-column: 4 / span 2;
     transition-delay: 0.1s;
   }
-  /* @media (min-width: ${(p) =>
-      `${p.theme.bp.desktops}px`}) and (orientation: landscape) {
+  @media (min-width: ${(p) =>`${p.theme.bp.desktops}px`}) and (orientation: landscape) {
     grid-row: 3;
     grid-column: 9 / span 2;
-  } */
+  }
 `;
 
 export {
