@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Carret from "../../icons/Carret";
+import Caret from "../../icons/Caret";
 import SliderButtonStyles from "./slider-button.styles";
 
 const SliderButton = ({
