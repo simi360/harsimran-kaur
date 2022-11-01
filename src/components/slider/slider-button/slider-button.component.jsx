@@ -24,7 +24,7 @@ const SliderButton = ({
         enableArrow ? "" : "control-disabled"
       }`}
     >
-      <Carret colors={colors} />
+      <Caret colors={colors} />
     </SliderButtonStyles>
   );
 };
