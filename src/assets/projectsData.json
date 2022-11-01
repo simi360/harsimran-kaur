@@ -30,7 +30,7 @@
         "thumb": {
           "default": "e-commerce-thumb.png",
           "retina": "e-commerce-thumb2x.png",
-          "lazy": "cfl-thumb-lazy.png"
+          "lazy": "e-commerce-thumb.png"
         },
         "project": [
           {
