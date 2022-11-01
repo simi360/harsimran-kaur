@@ -3,14 +3,14 @@
       "id": "clothingecommerce",
       "name": "Clothing E-Commerce",
       "year": "2021-2022",
-      "client": "Demo-Clothing",
+      "client": "",
       "url": "https://635b0494afefed149adfa998--frabjous-banoffee-04d76f.netlify.app/",
       "agency": {
         "name": "Apptonate",
         "url": "https://www.apptonate.com"
       },
       "role": "Full-Stack Developer",
-      "summary": "Confidential company asked Apptonate to make a complete rebranding of their clothing e-commerse website. My job was to make a static version of the website and integrate with the back-end developers. In addition to creating about 30 different pages with different behaviours, the website had to be accessible, crossbrowser compatible and support legacy browsers",
+      "summary": "Confidential company asked Apptonate to make a complete re-branding of their clothing e-commerce website. My job was to make a static version of the website and integrate with the back-end developers. In addition to creating about 30 different pages with different behaviors, the website had to be accessible, cross-browser compatible and support legacy browsers",
       "technologies": [
         "HTML",
         "SASS",
@@ -30,70 +30,42 @@
         "thumb": {
           "default": "e-commerce-thumb.png",
           "retina": "e-commerce-thumb2x.png",
-          "lazy": "e-commerce-thumb.png"
+          "lazy": "e-commerce-thumb-lazy.png"
         },
         "project": [
           {
-            "src": "cfl-home.jpg",
-            "lazy": "cfl-home-lazy.jpg",
-            "alt": "CFL Travelers homepage",
-            "url": "https://www.cfl.lu",
+            "src": "e-commerce-first-page.png",
+            "lazy": "e-commerce-first-page-lazy.png",
+            "alt": "E-commerce Home Page",
+            "url": "",
             "isMobile": false
           },
           {
-            "src": "cfl-timetables.png",
-            "lazy": "cfl-timetables-lazy.png",
-            "alt": "CFL Travelers timetable results",
-            "url": "https://www.cfl.lu/fr-fr/search/searchresult?SearchDepartureExtId=9217081&SearchDeparture=Luxembourg%2C+Gare+Centrale&SearchArrivalExtId=8200102&SearchArrival=Pfaffenthal-Kirchberg&departureBullets=departure&SearchDate=2020-06-27&SearchTime=17%3A00&SearchViaExtId=&SearchVia=&SearchProducts=0%2C1&SearchProducts=3%2C4&SearchProducts=2%2C5&SearchProducts=8&SearchProducts=9&SearchMaxConnections=4&SearchManageOriginWalk=true&SearchManageDestWalk=true&advanced-search-preferences=direct",
+            "src": "e-commerce-shop-page.png",
+            "lazy": "e-commerce-shop-page-lazy.png",
+            "alt": "E-commerce Shop Page",
+            "url": "",
             "isMobile": false
           },
           {
-            "src": "cfl-network.png",
-            "lazy": "cfl-network-lazy.png",
-            "alt": "CFL Travelers's network overview",
-            "url": "https://www.cfl.lu/fr-fr/network",
+            "src": "e-commerce-sign-in-page.png",
+            "lazy": "e-commerce-sign-in-page-lazy.png",
+            "alt": "E-commerce Sign In page",
+            "url": "",
             "isMobile": false
           },
           {
-            "src": "cfl-transport.png",
-            "lazy": "cfl-transport-lazy.png",
-            "alt": "CFL Fret combined transport page",
-            "url": "https://www.cfl-mm.lu/fr-fr/solutions/ferroviaire/transport-combine",
+            "src": "e-commerce-checkout-page.png",
+            "lazy": "e-commerce-checkout-page-lazy.png",
+            "alt": "E-commerce Checkout Page",
+            "url": "",
             "isMobile": false
           },
           {
-            "src": "cfl-groupe.jpg",
-            "lazy": "cfl-groupe-lazy.jpg",
-            "alt": "CFL Group's homepage",
-            "url": "https://groupe.cfl.lu/fr-fr",
-            "isMobile": false
-          },
-          {
-            "src": "cfl-historique.jpg",
-            "lazy": "cfl-historique-lazy.jpg",
-            "alt": "CFL' history",
-            "url": "https://groupe.cfl.lu/fr-fr/history",
-            "isMobile": false
-          },
-          {
-            "src": "cfl-projects.png",
-            "lazy": "cfl-projects-lazy.png",
-            "alt": "CFL Group's projects",
-            "url": "https://groupe.cfl.lu/fr-fr/project",
-            "isMobile": false
-          },
-          {
-            "src": "cfl-numbers.png",
-            "lazy": "cfl-numbers-lazy.png",
-            "alt": "CFL Group's key numbers",
-            "url": "https://groupe.cfl.lu/fr-fr/keynumbers",
-            "isMobile": false
-          },
-          {
-            "src": "cfl-contact.png",
-            "lazy": "cfl-contact-lazy.png",
-            "alt": "CFL Group's contact page",
-            "url": "https://groupe.cfl.lu/fr-fr/contact",
+            "src": "e-commerce-hats-page-with-cart-component.png",
+            "lazy": "e-commerce-hats-page-with-cart-component-lazy.png",
+            "alt": "E-commerce Hats Page with Cart component opened up",
+            "url": "",
             "isMobile": false
           }
         ]
@@ -130,37 +102,37 @@
       "challenges": ["Creating a back-end server"],
       "photos": {
         "thumb": {
-          "default": "aea-thumb.png",
-          "retina": "aea-thumb2x.png",
-          "lazy": "aea-thumb-lazy.png"
+          "default": "face-recognition-thumb.png",
+          "retina": "face-recognition-thumb2x.png",
+          "lazy": "face-recognition-thumb-lazy.png"
         },
         "project": [
           {
-            "src": "aea-home.png",
-            "lazy": "aea-home-lazy.png",
-            "alt": "A&A's homepage",
-            "url": "https://www.aea.lu",
+            "src": "fr-signin-home-page.png",
+            "lazy": "fr-signin-home-page-lazy.png",
+            "alt": "Face Recognition: Sign In Home Page",
+            "url": "",
             "isMobile": false
           },
           {
-            "src": "aea-immo.png",
-            "lazy": "aea-immo-lazy.png",
-            "alt": "A&a's real estate page",
-            "url": "https://www.aea.lu/fr/immobilier",
+            "src": "fr-register-page.png",
+            "lazy": "fr-register-page-lazy.png",
+            "alt": "Face Recognition: Register Page",
+            "url": "",
             "isMobile": false
           },
           {
-            "src": "aea-goods.png",
-            "lazy": "aea-goods-lazy.png",
-            "alt": "A&a's available goods",
-            "url": "https://www.aea.lu/fr/immobilier/recherche",
+            "src": "fr-user-login-page.png",
+            "lazy": "fr-user-login-page-lazy.png",
+            "alt": "Face recognition: User login page",
+            "url": "",
             "isMobile": false
           },
           {
-            "src": "aea-property.png",
-            "lazy": "aea-property-lazy.png",
-            "alt": "A&a's property's details",
-            "url": "https://www.aea.lu/fr/immobilier/recherche/location/maison-bettembourg",
+            "src": "fr-face-recognition.png",
+            "lazy": "fr-face-recognition-lazy.png",
+            "alt": "Face recognition: main face recognition page",
+            "url": "",
             "isMobile": false
           }
         ]
@@ -194,11 +166,47 @@
       "challenges": ["Learning to create authentication in a way that was secure"],
       "photos": {
         "thumb": {
-          "default": "law-thumb.png",
-          "retina": "law-thumb2x.png",
-          "lazy": "law-thumb-lazy.png"
+          "default": "clinic-thumb.png",
+          "retina": "clinic-thumb2x.png",
+          "lazy": "clinic-thumb-lazy.png"
         },
-        "project": []
+        "project": [
+          {
+            "src": "clinic-blog-page.png",
+            "lazy": "clinic-blog-page-lazy.png",
+            "alt": "Clinic: Sample blog page",
+            "url": "",
+            "isMobile": false
+          },
+          {
+            "src": "clinic-home-page.png",
+            "lazy": "clinic-home-page-lazy.png",
+            "alt": "Clinic: Home Page",
+            "url": "",
+            "isMobile": false
+          },
+          {
+            "src": "clinic-about-me-page.png",
+            "lazy": "clinic-about-me-page-lazy.png",
+            "alt": "Clinic: About Me Page",
+            "url": "",
+            "isMobile": false
+          },
+          {
+            "src": "clinic-services-page.png",
+            "lazy": "clinic-services-page-lazy.png",
+            "alt": "Face recognition: User login page",
+            "url": "",
+            "isMobile": false
+          },
+          {
+            "src": "clinic-contact-page.png",
+            "lazy": "clinic-contact-page-lazy.png",
+            "alt": "Clinic: Contact Page",
+            "url": "",
+            "isMobile": false
+          }
+        ]
       },
       "colors": {
         "primary": "#B23427",
