@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import PropTypes from "prop-types";
 
 const ErrorSlider = lazy(() => import("./error-slider/ErrorSlider"));
-// import ErrorDefault from './ErrorDefault';
+import ErrorDefault from "./error-default/ErrorDefault";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class ErrorBoundary extends React.Component {
             </Suspense>
           );
         default:
-          // return <ErrorDefault />;
+          return <ErrorDefault />;
       }
     }
 

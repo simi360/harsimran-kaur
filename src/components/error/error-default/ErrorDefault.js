@@ -17,6 +17,7 @@ const Title = styled.h1`
   background: ${(p) => p.theme.color.primaryLight};
   color: white;
   font-family: ${(p) => p.theme.font.poppins};
+
   &::after {
     content: "";
     width: 100%;
