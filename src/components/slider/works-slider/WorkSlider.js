@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Loader from '../../loaders/project-loader/project-loader.component'
 import WorkSliderMobile from "./mobile-slider/MobileSlider";
-import DesktopSlider from './desktop-slider /DesktopSlider'
+import DesktopSlider from './desktop-slider/DesktopSlider'
 import { ThemeContext } from "styled-components";
 import { useViewPortWidth } from "../../../utils/getViewport";
 import ProjectsData from "../../../assets/projectsData.json";
@@ -26,7 +26,7 @@ const WorkSlider = () => {
     getProjects();
   }, []);
 
-  if (isLoading && projects.length == 0) {
+  if (isLoading && projects.length === 0) {
     return <Loader />;
   }
 

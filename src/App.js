@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useState, useEffect } from "react";
-import { Routes, Switch, HashRouter as Router, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import CSSTransition from "react-transition-group/esm/CSSTransition";
 import TransitionGroup from "react-transition-group/esm/TransitionGroup";
@@ -17,11 +17,11 @@ import Home from './routes/home/home.route';
 const About = lazy(() => import('./routes/about/about.route'));
 // const ProjectDetailsRoute = lazy(() => import("./routes/ProjectDetailsRoute"));
 
-const ProjectDetailsRoute = () => {
-  return(
-    <h1>Project Details</h1>
-  )
-}
+// const ProjectDetailsRoute = () => {
+//   return(
+//     <h1>Project Details</h1>
+//   )
+// }
 
 function App() {
   const [isLoading, setLoadingStatus] = useState(true);

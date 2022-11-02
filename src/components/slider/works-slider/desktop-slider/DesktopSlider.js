@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import PropTypes from "prop-types";
@@ -51,20 +52,18 @@ class DesktopSlider extends React.Component {
     );
   }
 
-  componentWillUnmount() {
-    //remove all the scroll trigger events
-    this.state.slides.forEach((slide, index) => {
-      ScrollTrigger.getById(`slide${index}`).kill();
-    });
-  }
+  // componentWillUnmount() {
+  //   //remove all the scroll trigger events
+  //   this.state.slides.forEach((slide, index) => {
+  //     ScrollTrigger.getById(`slide${index}`).kill();
+  //   });
+  // }
 
   animateSlides() {
     this.state.slides.forEach((slide, i) => {
       ScrollTrigger.create({
         // use dynamic scroll positions based on the window height (offset by half to make it feel natural)
-        // eslint-disable-next-line no-restricted-globals
         start: () => (i - 0.5) * innerHeight,
-        // eslint-disable-next-line no-restricted-globals
         end: () => (i + 0.5) * innerHeight,
         // when a new section activates (from either direction), set the section accordingly.
         onUpdate: (self) => self.isActive && this.updateSlider(slide, i),
@@ -143,7 +142,7 @@ class DesktopSlider extends React.Component {
           <SliderContainer>
             <WorkSliderPagination
               activeIndex={activeIndex}
-              sliderLenght={slides.length}
+              sliderLength={slides.length}
             />
             <div className="slider-container">
               {slides &&
@@ -152,7 +151,7 @@ class DesktopSlider extends React.Component {
                     key={"slide" + index}
                     slide={slide}
                     slideIndex={index}
-                    isActive={activeIndex == index ? true : false}
+                    isActive={activeIndex === index ? true : false}
                   />
                 ))}
             </div>
