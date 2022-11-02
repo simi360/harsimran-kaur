@@ -16,7 +16,7 @@ const HomeLoader = () => {
     <Main>
       <FadeUpDiv>
         <GridDiv>
-          <h1 className="read-only">Sarah Hick</h1>
+          <h1 className="read-only">Harsimran Kaur</h1>
           <FirstNameDiv>
             <FirstNameSpan>Harsimran</FirstNameSpan>
           </FirstNameDiv>
